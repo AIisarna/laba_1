@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+    <title>Трекер привычек</title>
+  </head>
+  <body>
+    <div class="container">
+      <h2>Мои привычки</h2>
+      <p></p>
+      <form class="add-habit">
+        <input
+          class="habit"
+          type="text"
+          name="habit"
+          placeholder="Название привычки"
+          required
+        />
+        <input
+          type="number"
+          name="reps"
+          placeholder="Количество повторений "
+          min="1"
+          required
+        />
+        <div class="frequency">
+          <label for="timeframe">Частота: </label>
+          <select name="timeframe" id="timeframe">
+            <option value="Ежедневно">Ежедневно</option>
+            <option value="Еженедельно">Еженедельно</option>
+            <option value="Ежемесячно">Ежемесячно</option>
+            <option value="Ежегодно">Ежегодно</option>
+          </select>
+        </div>
+        <input type="submit" value="+ Добавить привычку" />
+      </form>
+
+      <ul class="habits">
+        <li>Загрузка...</li>
+      </ul>
+    </div>
+
+    <script src="./app.js"></script>
+  </body>
+</html>
